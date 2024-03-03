@@ -13,3 +13,6 @@ docker ps --filter "name=nginx-proxy" --filter "name=dnsmasq-proxy" --filter sta
 
 # start containers
 docker compose up -d
+
+# open the port on firewall (recommended to limit access from a source ip)
+ufw allow 53

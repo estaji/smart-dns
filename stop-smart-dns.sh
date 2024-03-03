@@ -4,8 +4,13 @@
 docker compose down
 
 # start normal services
-systemctl stop nginx
-systemctl stop systemd-resolved
+systemctl start nginx
+sleep 2
+systemctl start systemd-resolved
+sleep 2
+
+# close the port on firewall
+ufw delete allow 53
 
 # ensure situation
 systemctl status nginx
