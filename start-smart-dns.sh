@@ -1,4 +1,16 @@
 #!/bin/bash
+# Ubuntu22 LTS
+
+# verify docker is installed
+check_if_requirements_are_available()
+{
+    if ! hash $1 2>/dev/null
+    then
+        echo "$1 command not found. You have to install $1 first."
+        exit 1
+    fi
+}
+check_if_requirements_are_available docker
 
 # stop services on ports 443, 80, 53
 systemctl stop nginx
