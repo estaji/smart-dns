@@ -5,6 +5,8 @@ This package provides the same service as [Shecan.ir](https://shecan.ir/).
 
 All credit to [Mojtaba Ahadi](https://github.com/M-Ahadi/dockers).
 
+This is not the only solution, also you can use [smartSNI](https://github.com/bepass-org/smartSNI).
+
 # How
 1. Install docker on the server.
 2. Stop other services on ports ``443``, ``80``, and ``53``.
