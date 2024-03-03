@@ -16,4 +16,4 @@ ufw delete allow 53
 systemctl status nginx
 systemctl status systemd-resolved
 netstat -tlpn
-ping google.com
+ping -c 3 google.com

@@ -5,7 +5,7 @@ systemctl stop nginx
 systemctl stop systemd-resolved
 
 # update ips in dnsmasq/proxy.conf file
-SRV_IP=$(hostname -i)
+SRV_IP=$(hostname -I | awk '{ print $1 }')
 sed -i "s/YOUR_VPS_IP/$SRV_IP/" dnsmasq/proxy.conf
 
 # stop other containers
