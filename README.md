@@ -21,6 +21,7 @@ sed -i 's/YOUR_VPS_IP/xxx.xxx.xxx.xxx/' dnsmasq/proxy.conf
 ```
 docker compose up -d
 ```
+6. (optional) Limit ``443``, ``80``, and ``53`` ports to your IP address on server's firewall.
 
 # Contribution
 All contributions are welcomed.
